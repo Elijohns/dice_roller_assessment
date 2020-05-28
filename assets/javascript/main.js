@@ -16,14 +16,18 @@ rollButton.addEventListener("click", function() {
       roll += 1
     dieRoll.push(result)
     total.innerHTML = sum 
+    
    }
-     console.log(dieRoll)
+   console.log(dieRoll)
+     
 })
 
     
 
 allRollsButton.addEventListener("click", function() {
-  let numb = 0
-  while (numb < dieRoll.length) {
-    list.innerHTML += "<ol>" + dieRoll[numb] + "</ol>" 
-  }})
+  let number = 0
+  while (number < dieRoll.length) {
+    list.innerHTML = "<li>" + dieRoll(number) + "</li>" 
+    
+  }
+  console.log(list)})
